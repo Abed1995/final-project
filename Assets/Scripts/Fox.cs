@@ -1,8 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollisionDetect : MonoBehaviour
+public class Fox : Enemies
 {
     // Start is called before the first frame update
     void Start()
@@ -13,11 +13,8 @@ public class CollisionDetect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        Destroy(other.gameObject);
-        Destroy(gameObject);
+        MoveForward(8);
+        DetectCollision();
+        DestroyOutOfBords();
     }
 }

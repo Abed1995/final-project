@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 8807938791778430026}
   - component: {fileID: 8807938791779232874}
   - component: {fileID: 8807938791780331178}
-  - component: {fileID: 8807938792947100995}
   - component: {fileID: 278004884}
   - component: {fileID: -7517502380168129807}
   - component: {fileID: 448750399127833563}
   m_Layer: 0
   m_Name: Food_Pizza_01
-  m_TagString: Untagged
+  m_TagString: Pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,6 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -83,19 +83,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &8807938792947100995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8807938791778136170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 208bc5c48aa56884b9e31a7e890b2ba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &278004884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +93,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8807938791778136170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d1f4bebe3ef885488b8e1b8e4abc3d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 553be397628f2754b98310dceab87b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &-7517502380168129807
@@ -116,7 +104,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8807938791778136170}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.4597009, y: 0.13234863, z: 0.55363166}
