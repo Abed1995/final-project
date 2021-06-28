@@ -16,11 +16,7 @@ public class Enemies : MonoBehaviour
     void Update()
     {
 
-        if (transform.position.z < bottomBound)
-        {
-            Debug.Log("GAME OVER");
-            Destroy(gameObject);
-        }
+        
     }
 
     public void MoveForward(int speed)

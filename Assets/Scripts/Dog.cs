@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dog : Enemies
+public class Dog : Enemies //inheritance 
 {
     // Start is called before the first frame update
     void Start()
@@ -13,8 +13,12 @@ public class Dog : Enemies
     // Update is called once per frame
     void Update()
     {
+        
+
+        // POLYMORPHISM
         MoveForward(6);
-       
+
+        //abstraction
         DestroyOutOfBords();
     }
     void OnTriggerEnter(Collider other)
