@@ -14,7 +14,17 @@ public class Fox : Enemies
     void Update()
     {
         MoveForward(8);
-        DetectCollision();
+        
         DestroyOutOfBords();
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Pizza"))
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+
     }
 }

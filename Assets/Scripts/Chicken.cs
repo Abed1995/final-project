@@ -14,7 +14,17 @@ public class Chicken : Enemies
     void Update()
     {
         MoveForward(3);
-        DetectCollision();
+      
         DestroyOutOfBords();
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Pizza"))
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+
     }
 }

@@ -28,18 +28,7 @@ public class Enemies : MonoBehaviour
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
-    public void DetectCollision()
-    {
-        void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Pizza"))
-            {
-                Destroy(other.gameObject);
-                Destroy(gameObject);
-            }
-
-        }
-    }
+   
 
     public void DestroyOutOfBords()
     {

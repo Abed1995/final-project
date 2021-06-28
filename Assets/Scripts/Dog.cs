@@ -14,7 +14,16 @@ public class Dog : Enemies
     void Update()
     {
         MoveForward(6);
-        DetectCollision();
+       
         DestroyOutOfBords();
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Pizza"))
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+
     }
 }
